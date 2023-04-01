@@ -10,8 +10,7 @@ streets = ['ленина', 'советская', 'краснооктябрьск
 
 
 def get_tuples(input_arr):
-    # TODO напишите Ваш код здесь
-    pass
+    return [(name, index) for index, name in enumerate(input_arr, 1)]
 
 
 if __name__ == "__main__":

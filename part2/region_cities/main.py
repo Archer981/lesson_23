@@ -20,8 +20,7 @@ towns = [Town('Балашиха', 'МО'), Town('Химки', 'МО'), Town('Т�
 
  
 def filter_towns(towns):
-    # TODO напишите свой код здесь
-    pass
+    return list(map(lambda x: x.name, filter(lambda x: x.region == 'МО', towns)))
 
 
 if __name__ == "__main__":

@@ -18,8 +18,7 @@ towns = [Town('Балашиха', 'МО'), Town('Химки', 'МО'), Town('Т�
 
  
 def sort_towns(towns):
-    # TODO напишите функцию здесь
-    pass
+    return list(map(lambda x: x.name, sorted(towns, key=lambda x: x.name)))
 
 
 if __name__ == "__main__":
