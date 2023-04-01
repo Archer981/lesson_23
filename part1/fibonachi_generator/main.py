@@ -5,8 +5,22 @@
 
 
 def fib(n):
-    # TODO напишите ваш код здесь
-    pass
+    if n == 1:
+        yield 0
+    elif n == 2:
+        yield 0
+        yield 1
+    else:
+        a = 0
+        b = 1
+        yield 0
+        yield 1
+        n -= 2
+        while n > 0:
+            c = a + b
+            n -= 1
+            yield c
+            a, b = b, c
 
 
 fib_gen = fib(15)
